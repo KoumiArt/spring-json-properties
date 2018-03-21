@@ -55,10 +55,15 @@ public class JsonFileProperties implements FactoryBean<Properties>, Initializing
 			});
 			if (Objects.nonNull(map)) {
 				map.forEach((k, v) -> {
-					Map<String, Object> value = (Map<String, Object>) v;
-					Object o = value.get(profile);
-					if (Objects.isNull(o)) {
-						o = value.get(DEFAULT_VALUE);
+					Object o = null;
+					if (v instanceof Map) {
+						Map<String, Object> value = (Map<String, Object>) v;
+						o = value.get(profile);
+						if (Objects.isNull(o)) {
+							o = value.get(DEFAULT_VALUE);
+						}
+					} else {
+						o = v;
 					}
 					if (Objects.nonNull(o)) {
 						props.setProperty(k, o.toString());
