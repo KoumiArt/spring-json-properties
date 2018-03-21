@@ -17,13 +17,13 @@ AppProperties.json
 
 ```
 {
-	"tsp.client.timeout": {
+	"test1": {
 		"defalut": 1,
 		"prd": 1
 	},
-	"fsp.register.address": {
-		"defalut": "fsp-register.sst.blackfi.sh:9989",
-		"prd": "fsp-register-master.blackfi.sh:9989,fsp-register-slave.blackfi.sh:9989"
+	"test2": {
+		"defalut": "2",
+		"prd": "1"
 	}
 }
 ```
