@@ -26,6 +26,8 @@ AppProperties.json
 		"prd": "fsp-register-master.blackfi.sh:9989,fsp-register-slave.blackfi.sh:9989"
 	}
 }
+default：为默认值
+prd:为指定分支的值
 ```
 使用AppProperties.class
 
