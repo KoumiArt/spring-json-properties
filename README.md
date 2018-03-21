@@ -26,4 +26,11 @@ AppProperties.json
 		"prd": "fsp-register-master.blackfi.sh:9989,fsp-register-slave.blackfi.sh:9989"
 	}
 }
-```# spring-json-properties
+```
+使用AppProperties.class
+
+```
+AppProperties.getValue("tsp.client.timeout");
+AppProperties.getIntegerValue("tsp.client.timeout");
+AppProperties.getStringValue("tsp.client.timeout");
+```
