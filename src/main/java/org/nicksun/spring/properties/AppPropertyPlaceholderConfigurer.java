@@ -7,6 +7,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
+/**
+ * @author nicksun
+ *
+ */
 public class AppPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer implements InitializingBean {
 
 	private static final Logger LOG = LoggerFactory.getLogger(AppPropertyPlaceholderConfigurer.class);

@@ -16,6 +16,10 @@ import org.springframework.util.ResourceUtils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * @author nicksun
+ *
+ */
 public class JsonFileProperties implements FactoryBean<Properties>, InitializingBean {
 
 	private static final Logger LOG = LoggerFactory.getLogger(JsonFileProperties.class);
