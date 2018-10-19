@@ -33,7 +33,7 @@ default：为默认值，必须存在的节点 prd:为指定分支的值，分�
 使用AppProperties.class
 
 ```
-AppProperties.getValue("tsp.client.timeout");
-AppProperties.getIntegerValue("tsp.client.timeout");
-AppProperties.getStringValue("tsp.client.timeout");
+AppProperties.getValue("test1");
+AppProperties.getIntegerValue("test2");
+AppProperties.getStringValue("test1");
 ```
